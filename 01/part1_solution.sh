@@ -1,0 +1,1 @@
+sum=0; while read num; do ((sum += num)); if [ "$num" = "" ]; then echo $sum; sum=0; fi; done < input.txt | sort -h | tail -n1
